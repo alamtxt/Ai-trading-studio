@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fenix-pro-terminal"
+version = "2.0.0"
+description = "Institutional-Grade Multi-Broker Indian Stock Market Trading Terminal & AI Hedge Fund Engine"
+authors = ["Ashfak Arya <developer@fenixpro.io>"]
+readme = "README.md"
+packages = [{include = "fenix_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = "^0.28.0"
+pydantic = "^2.6.4"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+plotly = "^5.20.0"
+yfinance = "^0.2.36"
+pyyaml = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
